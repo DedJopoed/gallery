@@ -1,0 +1,146 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.text_uppercase {
+     text-transform: uppercase;
+}
+
+/* ----------------------------------------------- */
+
+.container {
+    display: grid;
+    grid-template-columns: 250px 1fr;
+    width: 100vw;
+}
+
+.sidebar_container {
+    height: 100vh;
+    background-color: #18191E;
+    color: white;
+
+}
+
+/* ----------------------------------------------- */
+
+.profile_container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 25px 0;
+    border-radius: 8px;
+    background-color: #282633;
+    box-shadow: -1px 4px 6px rgba(0,0,0,0.3);
+}
+
+.profile_picture {
+    object-fit: cover;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+}
+
+.profile_name {
+    font-size: 21px;
+}
+
+.profile_upload_button {
+    padding: 10px 50px;
+    background-color: rgb(200, 113, 113);
+    color: white;
+    border: 2px solid transparent;
+    border-radius: 25px;
+    text-decoration: none;
+    margin-top: 2px;
+    transition: border-color 0.5s ease;
+    
+}
+.profile_upload_button:hover {
+    border: 2px solid rgb(30, 18, 18);
+    cursor: pointer;
+}
+
+.sidebar_list_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 20px 0;
+    gap: 10px;
+}
+
+/* ----------------------------------------------- */
+
+.categories {
+    text-align: center;
+}
+
+.categories_list {
+    list-style: none;
+    padding: 0;
+}
+
+.categories_item {
+    padding: 10px 15px;
+    margin-bottom: 5px ;
+    border: 1px solid transparent;
+}
+
+.categories_item:hover {
+    border-left: 3px solid rgb(200, 113, 113)
+}
+
+/* ----------------------------------------------- */
+
+.album_list_header {
+    padding: 0 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.album_list {
+    display: inline;
+    text-align: center;
+    
+}
+
+.album_add_btn {
+    border-radius: 50%;
+    background-color: transparent;
+    color: rgb(200, 113, 113);
+    border: 1px solid rgb(200, 113, 113);
+    width: 25px;
+    height: 25px;
+}
+
+.album_add_btn:hover {
+    cursor: pointer;
+}
+
+.album_list_body {
+    list-style: none;
+    padding: 0;    
+}
+
+.album_list_item {
+    padding: 10px 15px;
+    margin-bottom: 5px ;
+    border: 1px solid transparent;
+}
+
+.album_list_item:hover {
+    border-left: 3px solid rgb(200, 113, 113)
+}
+
+/* ----------------------------------------------- */
+
+.photos_container { 
+    background-color: #FAFAFA;
+}

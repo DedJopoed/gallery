@@ -1,0 +1,15 @@
+target: "ES2024"
+modules: ES2022
+rootDir: "./"
+
+
+EMIT
+outDir: "./out"
+
+
+AllowSyntheticDefaultImports: true
+esModuleInterop: true
+
+strict: true
+
+"exclude": "node_modules", "**/*.spec.ts"
